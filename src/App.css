@@ -1,0 +1,82 @@
+body {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.App span {
+  margin: 1rem 0;
+}
+
+h1 {
+  margin-bottom: 4rem;
+}
+
+.block_1 {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  flex-direction: column;
+}
+
+button {
+  height: 40px;
+  width: 200px;
+  background-color: #3A506B;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #1C2541;
+}
+
+.block_2 {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  flex-direction: column;
+}
+
+.block_3 {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.block_3 button {
+  margin: 1rem 0;
+}
+
+ul {
+  text-align: left;
+}
+
+@media only screen and (min-width: 769px) {
+  .block_1, .block_2, .block_3 {
+    flex-direction: row;
+  }
+
+  .block_3 {
+    flex-direction: row;
+  }
+
+  .block_3 button {
+    margin: 1rem 1rem;
+  }
+}
